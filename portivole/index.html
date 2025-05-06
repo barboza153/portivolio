@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Meu portfólio</title>
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Meu portfólio</title>
+    </head>
+
 <body>
-    <img src="" alt="" srcset="">
-    <p>Eu sou João Henrique_</p>
-    <h1>Eu sou aluno de Programação</h1>
-    <p></p>Gosto de handebol e sou atleta</p>
-    <p>Minhas habilidades</p>
-    <div>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>Scratch</p>
+    
+    <header class="container text-center">
+        <img src="" alt="" srcset="">
+        <p>Eu sou a João Barboza_</p>
+        <h1>Eu sou aluno de Programação</h1>
+        <p>Sou atleta e praticante de handebol há 1 ano</p>
+    </header> 
+       
+
+
+<main class="container mt-5">
+    <h2>Meus projetos</h2>
+    <div class="row">
+        <!-- Projeto 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                <div class="card-body">
+                    <h5 class="card-title">Handapp</h5>
+                    <p class="card-text">Este progeto é mostrar o handebol no mundo e influciar 
+                        as crianças do mundo e dar mais visibilidade no esporte .
+                    </p>
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                        o projeto</button>
+                </div>
+            </div>
+        </div>
     </div>
+</main>
+        
+
+<div class="modal" id="modal1"  tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Esse projeto foi criado para ajudar o esporte a ter mais visibilidade, esse projeto tem imagens ..... e tendo uma cor bem distacada 
+            para ajudar o publico, o projeto tem como entrada colocar sua conta, enrtando no projeto vai ter varias imagens e noticias do esporte, o 
+            tem varias funçoẽs como compras, entreterimento, dicas, treinos, etc.  </p>
+            <p>No Brasil o handebol não bem visto, por falta de materiais e essa falta  .</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://femascheti.github.io/minhas-leituras/">Ver projeto ao vivo</a>
+                <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="https://github.com/barboza153">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Fernanda Mascheti</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
